@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 150px;
+  align-items: center;
+  padding:0.2rem;
+  margin:1rem;
+  border:2px solid darkred;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.product-card:hover {
+  box-shadow: 0px 0px 5px 1px rgb(131, 63, 63);
+}
+
+.product-card p {
+  font-size: 0.8em;
+  text-align: center;
+  color: dodgerblue;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.product-card img {
+  height: 100px;
+  margin: 22px 0;
+  /* width: 100px; */
+}
+.product-card img:hover {
+  animation: zoomImage 1s both;
+  transform: scaleY(1.1);
+}
+
+@keyframes zoomImage {
+  0% {
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.5);
+  }
+} 
+
+.product-card button{
+  border:0;
+  background-color: darkred;
+  color: white;
+  padding:0.5rem;
+  margin:0.4rem;
+}
+
+.product-card button:hover {
+  background:radial-gradient(red,darkred);
+  cursor: pointer;
+}
+.product-card button:active {
+  background-color: red;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
